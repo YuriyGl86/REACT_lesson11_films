@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
 import { Layout } from './components/Layout'
 import { Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { FavoritesPage } from './pages/FavoritesPage';
 
 
 function App() {
@@ -11,8 +11,9 @@ function App() {
     <Routes>
       <Route path="/" element={ <Layout/>}>
         <Route index element={ <HomePage/>} />
-        <Route path="/posts/new" element={ <NewPage/>} />
-        <Route path="/posts/:id" element={ <DetailViewPage/>} />
+        <Route path="/favorites" element={ <FavoritesPage/>} />
+        {/* <Route path="/posts/new" element={ <NewPage/>} />
+        <Route path="/posts/:id" element={ <DetailViewPage/>} /> */}
         {/* <Route path="/drift" element={<DriftPage/>} />
         <Route path="/timeattack" element={<TimeAttackPage/>} />
         <Route path="/forza" element={<ForzaPage/>} /> */}
