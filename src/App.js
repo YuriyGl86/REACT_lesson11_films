@@ -4,6 +4,7 @@ import { Layout } from './components/Layout'
 import { Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { FavoritesPage } from './pages/FavoritesPage';
+import { FilmDetailViewPage } from './pages/FilmDetailViewPage';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={ <Layout/>}>
         <Route index element={ <HomePage/>} />
         <Route path="/favorites" element={ <FavoritesPage/>} />
+        <Route path="/films/:id" element={ <FilmDetailViewPage/>} />
         {/* <Route path="/posts/new" element={ <NewPage/>} />
         <Route path="/posts/:id" element={ <DetailViewPage/>} /> */}
         {/* <Route path="/drift" element={<DriftPage/>} />
