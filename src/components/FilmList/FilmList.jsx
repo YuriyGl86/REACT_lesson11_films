@@ -1,4 +1,4 @@
-import { Input,Avatar, Button, List, Skeleton, Tooltip } from 'antd';
+import { Avatar, Button, List, Skeleton, Tooltip } from 'antd';
 import { useDispatch, useSelector } from "react-redux";
 import { StarOutlined, StarFilled } from '@ant-design/icons';
 import { favoritesActions } from '../../store/slices/favoritesSlice';

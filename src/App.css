@@ -1,9 +1,17 @@
 .container {
-  width: 600px;
+  width: 1000px;
   padding: 20px;
 }
 
 .search-container {
   margin: 10px;
   padding: 10px;
+}
+
+.spin {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  border-radius: 4px;
 }
